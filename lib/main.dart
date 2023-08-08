@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-// Eventos
+// Eventos 
 abstract class AuthEvent {}
 
 class LoginButtonPressed extends AuthEvent {
@@ -11,7 +11,7 @@ class LoginButtonPressed extends AuthEvent {
   LoginButtonPressed({required this.username, required this.password});
 }
 
-// Estado
+// Estado 
 abstract class AuthState {}
 
 class AuthInitialState extends AuthState {}
@@ -230,7 +230,7 @@ Widget cuerpo() {
                   fit: BoxFit.cover)),
           child: Center(
               child: Text(
-            '¡Inicio de sesión exitoso!',
+            '¡Inicio sesion correctamente!',
             style: TextStyle(color: Colors.black, fontSize: 30.0),
           )),
         ),
